@@ -26,4 +26,4 @@ class FlannConan(ConanFile):
         pass
 
     def package_info(self):
-        self.cpp_info.libs = tools.collect_libs(self)
+        self.cpp_info.libs = ["flann" if self.options.shared else "flann_s"]
