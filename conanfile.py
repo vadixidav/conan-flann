@@ -1,7 +1,4 @@
 from conans import ConanFile, CMake, tools
-from conans.tools import download, unzip
-import os
-import shutil
 
 
 class FlannConan(ConanFile):
